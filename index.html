@@ -1,0 +1,80 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>FLEXBOX</title>
+		<!-- Адаптив -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta charset="UTF-8">
+	</head>
+		<body>
+			<div class="wrapper">
+				<div class="header">
+					<div class="container">
+						<div class="header__blocks">
+							<div class="header__block1">
+								<a class="header__button"><img src="css/icons/burger.png" alt="" class="button__burger"></a>
+							</div>
+							<div class="header__block2">
+								<a class="header__border"><img src="css/icons/divider.png" alt="" class="border__left"></a>
+								<a class="header__logo"><img src="css/icons/Group.png" alt="" class="button__logo"></a>
+									<div class="header__centerbuttons">
+									<a class="header__button"><img src="css/icons/call.png" alt="" class="button__call"></a>
+									<a class="header__button"><img src="css/icons/chat.png" alt="" class="button__chat"></a>	
+									<a class="header__button"><img src="css/icons/profile.png" alt="" class="button__profile"></a>
+									</div>							
+								<a class="header__border"><img src="css/icons/divider.png" alt="" class="border__right"></a>
+								</div>
+							<div class="header__block3">
+								<a class="header__button"><img src="css/icons/repair.png" alt="" class="button__repair"></a>
+								<a class="header__button"><img src="css/icons/checkstatus.png" alt="" class="button__checkstatus"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mainblock">
+					<div class="mainblock__titlerow">
+						<img src="css/icons/highlight.png" alt="" class="highlight">
+						<h1 class="h1">Услуги и сервисы</h1>
+						<div class="mainblock_block3FromHeader">
+							<a><div>Оставить заявку</div><img src="css/icons/repair.png" alt="" class="button__repair2"></a>
+							<a><div>Статус ремонта</div><img src="css/icons/checkstatus.png" alt="" class="button__checkstatus2"></a>
+						</div>
+					</div>
+					<div class="mainblock__nav">
+						<a href="" class="mainblock__nav__button mainblock__nav__button--activated" link="active">Ремонтируемые бренды</a>
+						<a href="" class="mainblock__nav__button">Ремонтируемые устройства</a>
+						<a href="" class="mainblock__nav__button">Цены на услуги</a>
+						<a href="" class="mainblock__nav__button">Адреса сервисных центров</a>
+						<a href="" class="mainblock__nav__button">Специальные цены</a>
+						<a href="" class="mainblock__nav__button">Отзывы</a>
+					</div>
+					<div class="mainblock__column">
+						<div class="mainblock__rows">
+							<div class="mainblock__content">
+								<p class="mainblock__textoverflow clip">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+								<p class="mainblock__textoverflow2 clip">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="mainblock__textoverflow2_1">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+								<div class="readmore">
+									<img src="css/icons/icon.png" alt="" class="arrowImg"><span class="mainblock__button__overflow">Читать далее</span>
+								</div>
+							</div>
+						</div>
+						<div class="mainblock__img">
+							<picture>
+								<source media="(min-width: 1px) and (max-width: 768px)" srcset="css/icons/mainphoto(320x230).png">
+								<source media="(min-width: 769px) and (max-width: 1120px)" srcset="css/icons/mainphoto(360x260).png">
+								<source media="(min-width: 1121px)" srcset="css/icons/mainphoto(532x383).png">
+								<img src="css/icons/mainphoto(320x230).png" class="mainblock__photologo">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+</html>

@@ -1,0 +1,755 @@
+
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+
+
+@font-face {
+	font-family: 'TTLakes-Bold';
+	src: url('../fonts/TTLakes-Bold.eot');
+	src: local('☺'), url('../fonts/TTLakes-Bold.woff') format('woff'), url('../fonts/TTLakes-Bold.ttf') format('truetype'), url('../fonts/TTLakes-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'TTLakes-Medium';
+	src: url('../fonts/TTLakes-Medium.eot');
+	src: local('☺'), url('../fonts/TTLakes-Medium.woff') format('woff'), url('../fonts/TTLakes-Medium.ttf') format('truetype'), url('../fonts/TTLakes-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'TTLakes-Regular';
+	src: url('../fonts/TTLakes-Regular.eot');
+	src: local('☺'), url('../fonts/TTLakes-Regular.woff') format('woff'), url('../fonts/TTLakes-Regular.ttf') format('truetype'), url('../fonts/TTLakes-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*
+
+body{
+	font-family: TT Lakes, "Helvetica Neue", Helvetica, sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+/* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок 
+  cursor: pointer;
+}
+*/
+
+
+/*FOR SMARTPHONE*/
+
+html, body {
+	font-family: 'TTLakes-Regular', sans-serif;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+@media screen and (min-width: 1px) and (max-width: 767px) {
+
+.header {
+	height: 80px;
+	width:: 100vw;
+}
+
+.container {
+	width: 100%;
+	padding: 14px 17px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.header__blocks {
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 60px;
+	flex: 0 0 100%;
+	align-items: center;
+}
+
+.header__block1 {
+	display: flex;
+	width: 60px;
+	justify-content: flex-start;
+}
+.header__button {}
+
+.button__burger {
+}
+
+.header__block2 {
+	display: flex;
+	flex: 0 1 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__border {}
+
+.border__left {
+	display: none;
+
+}
+
+.header__logo {
+	display: flex;
+	justify-content: flex-start;
+	margin-right: auto;
+	align-items: center;
+	align-self: center;
+}
+
+
+.button__logo {
+	margin-left: 20px;
+}
+
+.header__centerbuttons {
+	margin: 0 20px 0 auto;
+	display: none;
+}
+
+.button__call {}
+
+.button__chat {
+	margin-left: 15px;
+}
+
+.button__profile {
+	margin-left: 15px;
+}
+
+.border__right {
+	margin-left: 20px;
+}
+
+.header__block3 {
+	display: flex;
+	justify-content: space-around;
+	flex: 0 0 120px;
+	align-self: center;
+}
+
+.block3__text1 {
+	display: none;
+}
+
+.block3__text2 {
+	display: none;
+}
+
+.button__repair {
+}
+
+.button__checkstatus {
+	margin-left: -15px;
+}
+
+/*Content*/
+
+.mainblock {
+	height: 100%;
+	background: #F8F8F8;
+	width: 100%;
+	padding: 20px 0 50px 0;
+}
+
+.mainblock__titlerow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.highlight {
+
+}
+
+.mainblock_block3FromHeader {
+	display: none;
+}
+
+.h1 {
+	margin-right: auto;
+	margin-left: 17px;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.mainblock__nav {
+	display: flex;
+	overflow-x: scroll;
+	font-size: 16px;
+	align-items: center;
+	white-space: nowrap;
+	margin: 20px 0;
+	margin-left: 17px;
+}
+
+.mainblock__nav__button {
+	padding: 10px 15px;
+	letter-spacing: -0.2px;
+	color: #7E7E82;
+}
+a.mainblock__nav__button--activated {
+	border: 2px solid #B8FFEC;
+	background: #FFFFFF;
+	border-radius: 6px;
+}
+.mainblock__column {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.mainblock__rows {
+	flex-basis: 50%;
+	flex: 1 1;
+	line-height: 18px;
+	margin: 0 16px 20px 16px;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	color: #1B1C21;
+	align-self: center;
+}
+.mainblock__content {
+
+}
+
+p.mainblock__textoverflow {
+
+}
+
+.mainblock__textoverflow2 {
+	display: none;
+}
+
+.mainblock__textoverflow2_1 {
+	display: none;
+}
+
+.mainblock__textoverflow {
+
+}
+.clip {}
+
+
+
+.readmore {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.arrowImg {
+	align-self: center;
+	margin: 0 8px 0 20px;
+}
+
+.mainblock__button__overflow {
+	font-size: 16px;
+	letter-spacing: -0.2px;
+	font-family: 'TTLakes-Medium';
+}
+
+.mainblock__img {
+	align-self: stretch;
+	display: flex;
+	margin: 10px 0;
+	align-content: stretch;
+	justify-content: center;
+	align-items: stretch;
+	align-self: center;
+}
+
+.mainblock__photologo { 
+	width: 100%;
+	margin: 0 auto;
+	flex-grow: 1;
+	overflow: hidden;
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1120px) {
+
+.wrapper {
+
+}
+
+.header {
+	height: 80px;
+	background: white;
+
+}
+
+.container {
+	padding: 14px 17px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.header__blocks {
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 60px;
+	flex: 0 0 100%;
+	align-items: center;
+}
+
+.header__block1 {
+	margin-right: 10px;
+	display: flex;
+	width: 60px;
+	justify-content: flex-start;
+}
+.header__button {}
+
+.button__burger {
+}
+
+.header__block2 {
+	display: flex;
+	flex: 0 1 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__border {}
+
+.border__left {
+	margin-right: auto;
+}
+
+.header__logo {
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 0px;
+	align-items: center;
+	align-self: center;
+}
+
+
+.button__logo {
+	margin-left: 20px;
+}
+
+.header__centerbuttons {
+	margin: 0 -5px 0 auto;
+}
+
+.button__call {}
+
+.button__chat {
+	margin-left: 15px;
+}
+
+.button__profile {
+	margin-left: 15px;
+}
+
+.border__right {
+	margin-left: 20px;
+}
+
+.header__block3 {
+	display: flex;
+	justify-content: space-around;
+	flex: 0 0 120px;
+	align-self: center;
+}
+
+.button__repair {
+}
+
+.button__checkstatus {
+	margin-left: -15px;
+}
+
+/*Content*/
+
+.mainblock {
+	height: 100%;
+	background: #F8F8F8;
+	width: 100%;
+	padding: 20px 20px 50px 20px;
+}
+
+.mainblock__titlerow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.highlight {
+	position: absolute;
+	left: 0;
+}
+
+.mainblock_block3FromHeader {
+	display: none;
+}
+
+.h1 {
+	margin-right: auto;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.mainblock__nav {
+	display: flex;
+	overflow-x: scroll;
+	font-size: 16px;
+	align-items: center;
+	white-space: nowrap;
+	margin: 20px 0;
+}
+
+.mainblock__nav__button {
+	padding: 10px 15px;
+	letter-spacing: -0.2px;
+	color: #7E7E82;
+}
+a.mainblock__nav__button--activated {
+	border: 2px solid #B8FFEC;
+	background: #FFFFFF;
+	border-radius: 6px;
+}
+.mainblock__column {
+	height: 208px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.mainblock__rows {
+
+	line-height: 18px;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	color: #1B1C21;
+	
+}
+.mainblock__content {
+	padding-right: 40px;
+}
+
+p.mainblock__textoverflow {
+
+}
+
+.mainblock__textoverflow2_1 {
+	display: none;
+}
+
+.mainblock__textoverflow {
+	padding-bottom: 30px;
+}
+.clip {
+}
+
+
+
+.readmore {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.arrowImg {
+	align-self: center;
+	margin: 0 8px 0 20px;
+}
+
+.mainblock__button__overflow {
+	font-size: 16px;
+	letter-spacing: -0.2px;
+	font-family: 'TTLakes-Medium';
+}
+
+.mainblock__img {
+	
+}
+
+	.mainblock__photologo {
+	border-radius: 10px;
+}
+
+}
+
+@media screen and (min-width: 1121px){
+
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	background: #F8F8F8;
+}
+
+.header {
+	display: none;
+	height: 80px;
+	background: white;
+
+}
+
+.container {
+	padding: 14px 17px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.header__blocks {
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 60px;
+	flex: 0 0 100%;
+	align-items: center;
+}
+
+.header__block1 {
+	display: flex;
+	width: 60px;
+	justify-content: flex-start;
+}
+.header__button {}
+
+.button__burger {
+}
+
+.header__block2 {
+	display: flex;
+	flex: 0 1 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__border {}
+
+.border__left {
+
+}
+
+.header__logo {
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 0px;
+	align-items: center;
+	align-self: center;
+}
+
+
+.button__logo {
+	margin-left: 20px;
+}
+
+.header__centerbuttons {
+	margin: 0 -5px 0 auto;
+}
+
+.button__call {}
+
+.button__chat {
+	margin-left: 15px;
+}
+
+.button__profile {
+	margin-left: 15px;
+}
+
+.border__right {
+	margin-left: 20px;
+}
+
+.header__block3 {
+	display: flex;
+	justify-content: space-around;
+	flex: 0 0 120px;
+	align-self: center;
+}
+
+.block3__text1 {
+	display: none;
+}
+
+.block3__text2 {
+	display: none;
+}
+
+.button__repair {
+}
+
+.button__checkstatus {
+	margin-left: -15px;
+}
+
+/*Content*/
+
+.mainblock {
+	height: 100%;
+	background: #F8F8F8;
+	width: 100%;
+	padding: 42px 28px 48px 28px;
+}
+
+
+.mainblock__titlerow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.highlight {
+	position: relative;
+	left: -28px;
+}
+
+.mainblock_block3FromHeader {
+	display: flex;
+	justify-content: space-between;
+	width: 375px;
+	align-self: center;
+	align-content: center;
+	align-items: 100%;
+}
+
+.mainblock_block3FromHeader a {
+	display: flex;
+	align-items: center;
+}
+
+.mainblock_block3FromHeader a div{
+	margin-right: 10px;
+	font-size: 16px;
+	font-family: 'TTLakes-Medium';
+}
+
+.h1 {
+	margin-right: auto;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.mainblock__nav {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	font-size: 16px;
+	align-items: stretch;
+	margin: 20px 0;
+}
+
+.mainblock__nav__button {
+	flex-grow: 1;
+	white-space: normal;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	letter-spacing: -0.2px;
+	color: #7E7E82;
+}
+a.mainblock__nav__button--activated {
+	border: 2px solid #B8FFEC;
+	background: #FFFFFF;
+	border-radius: 6px;
+}
+.mainblock__column {
+	margin-top: -15px;
+	height: 307px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.mainblock__rows {
+
+	line-height: 18px;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	color: #1B1C21;
+	
+}
+.mainblock__content {
+	padding-right: 40px;
+}
+
+p.mainblock__textoverflow {
+
+}
+
+.mainblock__textoverflow {
+	padding-bottom: 30px;
+}
+.clip {
+}
+
+
+
+.readmore {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.arrowImg {
+	align-self: center;
+	margin: 0 8px 0 20px;
+}
+
+.mainblock__button__overflow {
+	font-size: 16px;
+	letter-spacing: -0.2px;
+	font-family: 'TTLakes-Medium';
+}
+
+.mainblock__img {
+
+}
+
+	.mainblock__photologo {
+	border-radius: 10px;
+}
+
+}
